@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors in CSS</title>
+  </head>
+  <body>
+    <h1>Lets discuss selectors in CSS!</h1>
+    <button>Click</button>
+    <p id="para1">This is a styled paragraph</p>
+    <p class="para">This is a styled paragraph</p>
+    <p class="para">This is a styled paragraph</p>
+    <p>This is a styled paragraph</p>
+    <p>This is a styled paragraph</p>
+    <p>This is a styled paragraph</p>
+
+    <style>
+      /* This is called element selector */
+      button {
+        background-color: blue;
+        color: white;
+      }
+
+      /* This is called group selector */
+      h1,
+      p {
+        color: red;
+      }
+
+      /* This is called id selector */
+      #para1 {
+        color: green;
+      }
+
+      /* This is called class selector */
+      .para {
+        color: purple;
+      }
+
+      /* Lets dicuss all the selectos */
+
+      /*
+The element selector is used for targeting the tag through it's tag name.
+The group selector is used for targeting multiple tags throght their tag name.
+The id selector is used for targeting the tag through it's id using the # sign.
+The class selector is used for targeting multiple tags through their classes using the . sign.
+*/
+    </style>
+  </body>
+</html>

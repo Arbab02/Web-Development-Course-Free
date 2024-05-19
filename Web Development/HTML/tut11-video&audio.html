@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio & Video</title>
+  </head>
+  <body>
+    <!-- The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+
+    The <audio> tag contains one or more <source> tags with different audio sources.
+    The browser will choose the first source it supports.
+        
+    The text between the <audio> and </audio> tags will only be displayed in browsers
+    that do not support the <audio> element.
+        
+    Controls attribute specifies that audio controls should be displayed (such as a play/pause button etc).
+    
+    Autoplay attribute specifies that the audio will start playing as soon as it is ready.
+
+    Muted attribute specifies that the audio will start over again, every time it is finished.
+
+    Loop attribute specifies that the audio will start over again, every time it is finished
+    -->
+
+    <!-- Audio Tag -->
+    <audio controls autoplay muted loop>
+      <source src="nokia.ogg" type="audio/ogg" />
+      <source src="nokia.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Video Tag -->
+    <video controls autoplay loop height="300px">
+        <source src="view.ogg" type="video/ogg" />
+        <source src="view.mp4" type="video/mp4" />
+        Your browser does not support the audio tag.
+      </video>
+  </body>
+</html>

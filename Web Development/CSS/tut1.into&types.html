@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Types Of CSS</title>
+  </head>
+  <body>
+    <!-- Inline-CSS -->
+    <h1
+      style="color: red; font-family: Georgia, 'Times New Roman', Times, serif"
+    >
+      There are 3 types of CSS: Inline, Internal, and External!
+    </h1>
+
+    <p>This is a styled paragraph</p>
+    <!-- Internal CSS -->
+    <style>
+      p {
+        color: blue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      /* CSS Working */
+      /* 
+Remember this rule that HTML will first look at inline css. After that it will go
+to internal and then external css. So the CSS closer to html will get the highest
+priority and other will be ignored! */
+
+      /* Purpose of all 3 CSS */
+      /*
+Note: Inline CSS is the worst way of soing anything ao we'll not use it.
+Internal is used for learning purpose, while external is used for projects.
+*/
+
+    </style>
+  </body>
+</html>

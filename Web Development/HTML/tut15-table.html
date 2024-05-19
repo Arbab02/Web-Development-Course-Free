@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example with Comments</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <!-- Table tag defines the start of a table -->
+    <table>
+        <!-- Caption tag provides a title for the table -->
+        <caption>Employee Information Table</caption>
+        
+        <!-- Colgroup tag defines a group of columns with specific styles -->
+        <colgroup>
+            <col style="background-color: #f2f2f2">
+            <col style="background-color: #ffffff">
+            <col style="background-color: #f2f2f2">
+            <col style="background-color: #ffffff">
+        </colgroup>
+        
+        <!-- Thead tag groups the header content -->
+        <thead>
+            <!-- Tr tag defines a row -->
+            <tr>
+                <!-- Th tag defines a header cell -->
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        
+        <!-- Tbody tag groups the body content -->
+        <tbody>
+            <tr>
+                <!-- Td tag defines a data cell -->
+                <td>001</td>
+                <td>John Doe</td>
+                <!-- Rowspan attribute makes this cell span multiple rows -->
+                <td rowspan="2">HR</td>
+                <td>$5000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>$5500</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Sam Brown</td>
+                <td>IT</td>
+                <td>$6000</td>
+            </tr>
+            <tr>
+                <!-- Colspan attribute makes this cell span multiple columns -->
+                <td colspan="3">Total Employees</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        
+        <!-- Tfoot tag groups the footer content -->
+        <tfoot>
+            <tr>
+                <td colspan="4">End of Employee Information</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
