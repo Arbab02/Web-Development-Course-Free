@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model in CSS</title>
+  </head>
+  <body>
+    <div>
+      <h1>This is a heading</h1>
+      <p>This is a paragraph!</p>
+    </div>
+
+    <style>
+      /* Box Model in CSS */
+
+      /* Box Model in CSS consists of 4 components. Margin, Border, Padding, & Elements(child/childrens).
+Margin means the gap between a parent element's border and the web page. Padding means
+the gap b/w a child element and it's parent. */
+      div {
+        border: 5px solid black;
+        width: 200px;
+        /* top, right, bottom, left; */
+        margin: 50px 0px 0px 50px;
+        padding: 65px 0px 0px 65px;
+      }
+
+      /* In the above code, div is the parent element of h1 & p and both are it's children */
+    </style>
+  </body>
+</html>
